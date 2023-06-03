@@ -1,0 +1,168 @@
+@import "bootstrap/bootstrap";
+@import "index";
+@import "faq";
+
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" );
+@import url("https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css");
+
+// *{
+//   outline: solid 1px rgb(98, 98, 45);
+// }
+html{
+  margin:0;
+  padding: 0;
+
+}
+
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+  color: white;
+  background-color: black;
+
+}
+a, a:active , a:hover , a:link, a:visited{
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+
+
+.container{
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+
+
+
+.btn-cutom{
+  background-color: black;
+  border:  white 1px solid;
+  color: white;
+  border-radius: .5vw;
+}
+
+.deco{
+  width: 8vw;
+  height: 8vw;
+}
+
+.img-entprise{
+  width:7vw;
+  height: auto;
+
+}
+
+.mask1{
+  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%);
+}
+.mask2{
+  mask-image: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 100%);
+}
+.mask3{
+  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+}
+.mask4{
+  mask-image: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+}
+.avatar{
+  width: 4vw;
+  height: 4vw;
+}
+
+
+
+.card-radius{
+  border-radius: 1vw;
+  overflow: hidden;
+}
+
+.ai-bg-radius{
+  border-radius: 10vw;
+  color: black;
+
+}
+h1{
+  font-size: 3.5rem;
+}
+
+.icon{
+  padding-left: 50px;
+  background: url("https://github.com/hexschool/2022-web-layout-training/raw/main/2023web-camp/icons/search.png") no-repeat ;
+  background-position: left 20px top 15px ;
+  background-size: 20px;
+  background-color:rgb(227, 225, 225);
+  border-radius: 1vw;
+  border: none;
+}
+
+
+.btn-filter::after {
+  font-family: FontAwesome;
+    content:"\f0b0";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+
+.btn-radius{
+  border-radius: 1vw;
+  border: .5px solid lightgray;
+}
+
+label.btn-outline-secondary{
+  border: none;
+  color:lightgrey;
+}
+.btn-check:checked + .btn-outline-secondary, .btn-check:active +
+.btn-check:active
+{
+  color: black;
+  border: none;
+  outline: none;
+  background-color: lightgray;
+}
+.fs-7{
+  font-size: 12px;
+}
+.card-title ,.title{
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.card-img {
+  overflow:hidden;
+ img{
+  transition-duration: 1s ;
+  transition-timing-function:linear;
+  &:hover{
+    transform: scale(2,2);
+    }
+  }
+}
+
+
+.pagination{
+  .page-item{
+    &.active .page-link {
+      color: white;
+      background-color: black;
+      border-color:none;
+    }
+  }
+  .page-link {
+    border: none;
+    color: black;
+    &:hover{
+      color: white;
+      background-color: black;
+      border-color:none;
+    }
+  }
+
+}
+
+.logo{
+  width: 18vw;
+  height: auto;
+}
